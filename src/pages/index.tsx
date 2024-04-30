@@ -4,7 +4,7 @@ const Home: React.FC = () => {
   return (
     <div>
       <Header/>
-      <h1>Welcome to My Next.js App!</h1>
+      <h1>-</h1>
     </div>
   );
 };
