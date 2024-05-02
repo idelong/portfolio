@@ -11,7 +11,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
-        oswald: ["Oswald"],
+        oswald: ["Oswald", "sans-serif"],
       },
     },
   },
