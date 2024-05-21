@@ -67,7 +67,7 @@ const Home: React.FC = () => {
               <div className="text-black font-semibold   text-2xl">
                 Training App
               </div>
-            <div className="text-me font-light">As a Full-Stack Intern at PowerEQN Inc., I developed a custom Connect IQ app for Garmin watches, crucial to the company's MVP. Collaborating with a physicist, I improved algorithm accuracy by 20%, ensuring real-world performance. I focused on intuitive UI design for workout info access during runs, incorporating tactile feedback for engagement. I also led validation and enhancement of a proprietary run power formula through live testing.</div>
+            <div className="text-me font-light">As a Full-Stack Intern at PowerEQN Inc., I developed a custom Connect IQ app for Garmin watches, crucial to the company&apos;s MVP. Collaborating with a physicist, I improved algorithm accuracy by 20%, ensuring real-world performance. I focused on intuitive UI design for workout info access during runs, incorporating tactile feedback for engagement. I also led validation and enhancement of a proprietary run power formula through live testing.</div>
           </div>
           
         </div>;
