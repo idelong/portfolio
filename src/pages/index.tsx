@@ -39,19 +39,38 @@ const Home: React.FC = () => {
           height={700} 
           /> 
           </div>
-          <div className="bg-white mt-16 h-1/3 w-full p-8">
+          <div className="bg-white mt-16 w-full p-8">
               <div className="text-black font-medium text-lg">
-                      Smiling Woods Yurts
+                Smiling Woods Yurts
               </div>
-              <div className="text-black font-semibold   text-2xl">
+              <div className="text-black font-semibold text-2xl">
                 Production Scheduler
               </div>
-            <div className="text-me font-light mt-2">Smiling Woods Yurts Information</div>
+            <div className="text-me font-light">As a Software Engineer Intern at Smiling Woods Yurts, I developed a production scheduling solution using TypeScript, React, and Next.js, integrated with Google Sheets. This streamlined order control, reducing manual data entry time by 50% with dynamic graphs and a TV dashboard for real-time data input. I also designed an intuitive UI, conducted training sessions, and optimized production scheduling based on user feedback.</div>
           </div>
           
         </div>;
       case "peq":
-        return <div>PowerEQN Information</div>;
+        return <div className="w-full h-full">
+          <div className="flex justify-center items-center">
+          <Image className="border-solid border-0 border-white"
+          src="/Watch2.png" 
+          alt="Calendar" 
+          width={250}  
+          height={250} 
+          /> 
+          </div>
+          <div className="bg-white mt-16  w-full p-8">
+              <div className="text-black font-medium text-lg">
+                PowerEQN
+              </div>
+              <div className="text-black font-semibold   text-2xl">
+                Training App
+              </div>
+            <div className="text-me font-light">As a Full-Stack Intern at PowerEQN Inc., I developed a custom Connect IQ app for Garmin watches, crucial to the company's MVP. Collaborating with a physicist, I improved algorithm accuracy by 20%, ensuring real-world performance. I focused on intuitive UI design for workout info access during runs, incorporating tactile feedback for engagement. I also led validation and enhancement of a proprietary run power formula through live testing.</div>
+          </div>
+          
+        </div>;
       default:
         return null;
     }
@@ -86,8 +105,8 @@ const Home: React.FC = () => {
           Featured Work.
         </div>
         <div className="mt-16 grid grid-cols-2 gap-10">
-          <div className="relative w-full h-96 group hover:cursor-pointer" onClick={() => handleDonePopupSelect("swy")}>
-            <div className="absolute inset-0 border-solid border-4 border-emerald-200 rounded-md bg-white flex justify-center items-center">
+          <div className="relative w-full h-128 group hover:cursor-pointer" onClick={() => handleDonePopupSelect("swy")}>
+            <div className="absolute inset-0 border-solid border-4 border-emerald-300 rounded-md bg-white flex justify-center items-center">
             <Image className="border-solid border-0 border-white shadow-md"
               src="/ProdScheduler.png" 
               alt="Calendar" 
@@ -96,18 +115,18 @@ const Home: React.FC = () => {
             />
             </div>
 
-            <div className="absolute inset-0 rounded-md bg-emerald-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300">
+            <div className="absolute inset-0 rounded-md bg-emerald-600 opacity-0 group-hover:opacity-50 transition-opacity duration-300">
             
-              <div className="text-white font-medium ml-5 mt-5 text-xl">
-                  Smiling Woods Yurts
+              <div className="text-white font-medium ml-10 mt-10 text-lg">
+                Smiling Woods Yurts
               </div>
-              <div className="text-white font-semibold ml-5  text-2xl">
+              <div className="text-white font-semibold ml-10 text-2xl">
                 Production Scheduler
               </div>
             </div>
           </div>
-          <div className="relative w-full h-96 group hover:cursor-pointer" onClick={() => handleDonePopupSelect("peq")}>
-            <div className="absolute inset-0 border-solid border-4 border-emerald-200 rounded-md bg-white flex justify-center items-center">
+          <div className="relative w-full h-128 group hover:cursor-pointer" onClick={() => handleDonePopupSelect("peq")}>
+            <div className="absolute inset-0 border-solid border-4 border-emerald-300 rounded-md bg-white flex justify-center items-center">
               <Image className="border-solid border-0 border-white"
                 src="/Watch.png" 
                 alt="Watch" 
@@ -115,29 +134,19 @@ const Home: React.FC = () => {
                 height={200} 
               />
             </div>
-            <div className="absolute inset-0 rounded-md bg-emerald-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300">
-            <div className="text-white font-medium ml-5 mt-5 text-xl z-10">
+            <div className="absolute inset-0 rounded-md bg-emerald-600 opacity-0 group-hover:opacity-50 transition-opacity duration-300">
+            <div className="text-white font-medium ml-10 mt-10 text-lg z-10">
                 PowerEQN
               </div>
-              <div className="text-white font-semibold ml-5 text-2xl">
+              <div className="text-white font-semibold ml-10 text-2xl">
                 Training App
               </div>
             </div>
+            
           </div>
-          <div className="relative w-full h-96 group" >
-            <div className="absolute inset-0 border-solid border-0 bg-gray-100 flex justify-center items-center hover:">
-              
-            </div>
-            <div className="absolute inset-0 bg-emerald-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300">
-              <div className="text-white font-normal ml-5 mt-5 text-xl z-10">
-                Company
-              </div>
-              <div className="text-white font-semibold ml-5 text-2xl">
-                App
-              </div>
-            </div>
-          </div>
+          <div className="pb-4"></div>
         </div>
+
 
         
       </div>

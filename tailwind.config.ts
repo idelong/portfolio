@@ -13,6 +13,9 @@ const config: Config = {
         montserrat: ["Montserrat", "sans-serif"],
         oswald: ["Oswald", "sans-serif"],
       },
+      height: {
+        '128': '32rem',
+      }
     },
   },
   plugins: [],

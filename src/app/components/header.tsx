@@ -11,7 +11,7 @@ const Header = () => {
         
         <a className="relative mr-48" href="mailto:iandelong1@gmail.com">
           <span className="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-black"></span>
-          <span className="  fold-bold relative inline-block h-full w-full rounded border-2 border-black bg-emerald-200 px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-emerald-300 hover:text-gray-900">hire me</span>
+          <span className="  fold-bold relative inline-block h-full w-full rounded border-2 border-black bg-emerald-300 px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-emerald-400 hover:text-gray-900">hire me</span>
         </a>
       </div>
     </div>
