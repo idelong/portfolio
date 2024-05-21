@@ -110,8 +110,8 @@ const Home: React.FC = () => {
         <div className="text-3xl font-semibold">
           Featured Work.
         </div>
-        <div className="mt-16 grid grid-cols-2 gap-10">
-          <div className="relative w-full h-128 group hover:cursor-pointer" onClick={() => handleDonePopupSelect("swy")}>
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10">
+          <div className="relative h-64 w-full sm:h-128  group hover:cursor-pointer" onClick={() => handleDonePopupSelect("swy")}>
             <div className="absolute inset-0 border-solid border-4 border-emerald-300 rounded-md bg-white flex justify-center items-center">
             <Image className="border-solid border-0 border-white shadow-md"
               src="/ProdScheduler.png" 
@@ -131,7 +131,7 @@ const Home: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="relative w-full h-128 group hover:cursor-pointer" onClick={() => handleDonePopupSelect("peq")}>
+          <div className="relative h-64 w-full sm:h-128  group hover:cursor-pointer" onClick={() => handleDonePopupSelect("peq")}>
             <div className="absolute inset-0 border-solid border-4 border-emerald-300 rounded-md bg-white flex justify-center items-center">
               <Image className="border-solid border-0 border-white"
                 src="/Watch.png" 
