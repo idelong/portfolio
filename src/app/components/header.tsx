@@ -11,7 +11,7 @@ const Header = () => {
           <Link className="text-xl font-semibold hover:text-gray-600" href="https://www.linkedin.com/in/ian-delong/" target="_blank">linkedin</Link>
           <a className="relative" href="mailto:iandelong1@gmail.com">
             <span className="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-black"></span>
-            <span className="relative inline-block h-full w-full rounded border-2 border-black bg-emerald-300 px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-emerald-400 hover:text-gray-900">hire me</span>
+            <span className="relative inline-block h-full w-full rounded border-2 border-black bg-emerald-300 px-3 py-1 sm:px-2 text-base font-bold text-black transition duration-100 hover:bg-emerald-400 hover:text-gray-900">hire me</span>
           </a>
         </div>
       </div>
