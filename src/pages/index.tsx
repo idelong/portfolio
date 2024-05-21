@@ -95,12 +95,18 @@ const Home: React.FC = () => {
       {popupType !== "" && (
         <Popup onClose={closePopup}>{getPopupContent()}</Popup>
       )}
-      <div className="ml-48 mt-40 flex flex-col">
-        <span className="w-1/3 text-3xl font-semibold">Hey, I&apos;m Ian - A Software Engineer in Seattle.</span>
-        <div className="w-2/5 mt-10 text-xl font-light">I&apos;ve crafted interactive solutions for production scheduling at Smiling Woods Yurts, developed full-stack applications for Garmin devices at PowerEQN, and I’m currently looking for my next opportunity.  </div>
-        <Link className="mr-auto mt-5 text-xl font-normal hover:text-gray-700 hover:border-slate-600 border-solid border-b border-slate-900" href="mailto:iandelong1@gmail.com" target="_blank">iandelong1@gmail.com</Link>
+      <div className="mt-20 md:mt-40 px-4 sm:px-8 md:px-16 lg:px-48 flex flex-col items-center md:items-start">
+      <span className="w-full md:w-2/3 lg:w-1/2 text-3xl font-semibold text-center md:text-left">
+        Hey, I&apos;m Ian - A Software Engineer in Seattle.
+      </span>
+      <div className="w-full md:w-3/4 lg:w-2/5 mt-10 text-xl font-light text-center md:text-left">
+        I&apos;ve crafted interactive solutions for production scheduling at Smiling Woods Yurts, developed full-stack applications for Garmin devices at PowerEQN, and I’m currently looking for my next opportunity.
       </div>
-      <div className="ml-48 mt-24 mr-48">
+      <Link className="mt-5 text-xl font-normal hover:text-gray-700 border-b border-slate-900 hover:border-slate-600 text-center md:text-left" href="mailto:iandelong1@gmail.com" target="_blank">
+        iandelong1@gmail.com
+      </Link>
+    </div>
+      <div className="mt-24 px-4 sm:px-8 md:px-16 lg:px-48">
         <div className="text-3xl font-semibold">
           Featured Work.
         </div>
