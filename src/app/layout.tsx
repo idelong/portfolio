@@ -18,11 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <Analytics />
         <link rel="icon" href="/src/favicon.ico" sizes="any" />
       </head>
       <body className={inter.className}>
         {children}
-        <Analytics />
+        
       </body>
     </html>
   );
