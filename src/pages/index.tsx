@@ -31,43 +31,45 @@ const Home: React.FC = () => {
     switch (popupType) {
       case "swy":
         return <div className="w-full h-full">
-          <div className="flex justify-center items-center">
-          <Image className="border-solid border-0 border-white shadow-md"
-          src="/ProdScheduler.png" 
-          alt="Calendar" 
-          width={700}  
-          height={700} 
-          /> 
+        <div className="flex justify-center items-center">
+          <Image
+            className="border-solid border-0 border-white shadow-md"
+            src="/ProdScheduler.png"
+            alt="Calendar"
+            width={700}
+            height={700}
+          />
+        </div>
+        <div className="bg-white mt-16 w-full p-4 sm:p-6 md:p-8">
+          <div className="text-black font-medium text-lg">
+            Smiling Woods Yurts
           </div>
-          <div className="bg-white mt-16 w-full p-8">
-              <div className="text-black font-medium text-lg">
-                Smiling Woods Yurts
-              </div>
-              <div className="text-black font-semibold text-2xl">
-                Production Scheduler
-              </div>
-            <div className="text-me font-light">As a Software Engineer Intern at Smiling Woods Yurts, I developed a production scheduling solution using TypeScript, React, and Next.js, integrated with Google Sheets. This streamlined order control, reducing manual data entry time by 50% with dynamic graphs and a TV dashboard for real-time data input. I also designed an intuitive UI, conducted training sessions, and optimized production scheduling based on user feedback.</div>
+          <div className="text-black font-semibold text-2xl sm:text-xl md:text-2xl">
+            Production Scheduler
           </div>
-          
-        </div>;
+          <div className="text-black font-light text-sm sm:text-base md:text-me mt-4">
+            As a Software Engineer Intern at Smiling Woods Yurts, I developed a production scheduling solution using TypeScript, React, and Next.js, integrated with Google Sheets. This streamlined order control, reducing manual data entry time by 50% with dynamic graphs and a TV dashboard for real-time data input. I also designed an intuitive UI, conducted training sessions, and optimized production scheduling based on user feedback.
+          </div>
+        </div>
+      </div>;
       case "peq":
         return <div className="w-full h-full">
           <div className="flex justify-center items-center">
           <Image className="border-solid border-0 border-white"
           src="/Watch2.png" 
           alt="Calendar" 
-          width={250}  
-          height={250} 
+          width={220}  
+          height={220} 
           /> 
           </div>
-          <div className="bg-white mt-16  w-full p-8">
+          <div className="bg-white mt-16  w-full p-4 sm:p-6 md:p-8">
               <div className="text-black font-medium text-lg">
                 PowerEQN
               </div>
-              <div className="text-black font-semibold   text-2xl">
+              <div className="text-black font-semibold text-2xl sm:text-xl md:text-2xl">
                 Training App
               </div>
-            <div className="text-me font-light">As a Full-Stack Intern at PowerEQN Inc., I developed a custom Connect IQ app for Garmin watches, crucial to the company&apos;s MVP. Collaborating with a physicist, I improved algorithm accuracy by 20%, ensuring real-world performance. I focused on intuitive UI design for workout info access during runs, incorporating tactile feedback for engagement. I also led validation and enhancement of a proprietary run power formula through live testing.</div>
+            <div className="text-black font-light text-sm sm:text-base md:text-me mt-4">As a Full-Stack Intern at PowerEQN Inc., I developed a custom Connect IQ app for Garmin watches, crucial to the company&apos;s MVP. Collaborating with a physicist, I improved algorithm accuracy by 20%, ensuring real-world performance. I focused on intuitive UI design for workout info access during runs, incorporating tactile feedback for engagement. I also led validation and enhancement of a proprietary run power formula through live testing.</div>
           </div>
           
         </div>;
@@ -111,7 +113,7 @@ const Home: React.FC = () => {
           Featured Work.
         </div>
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10">
-          <div className="relative h-64 w-full sm:h-128  group hover:cursor-pointer" onClick={() => handleDonePopupSelect("swy")}>
+          <div className="relative h-96 w-full sm:h-128  group hover:cursor-pointer" onClick={() => handleDonePopupSelect("swy")}>
             <div className="absolute inset-0 border-solid border-4 border-emerald-300 rounded-md bg-white flex justify-center items-center">
             <Image className="border-solid border-0 border-white shadow-md"
               src="/ProdScheduler.png" 
@@ -131,7 +133,7 @@ const Home: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="relative h-64 w-full sm:h-128  group hover:cursor-pointer" onClick={() => handleDonePopupSelect("peq")}>
+          <div className="relative h-96 w-full sm:h-128  group hover:cursor-pointer" onClick={() => handleDonePopupSelect("peq")}>
             <div className="absolute inset-0 border-solid border-4 border-emerald-300 rounded-md bg-white flex justify-center items-center">
               <Image className="border-solid border-0 border-white"
                 src="/Watch.png" 
